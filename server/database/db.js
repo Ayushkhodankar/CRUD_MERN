@@ -2,7 +2,7 @@ import { mongoose } from "mongoose";
 
 const connection= async()=>{
 
-const URL='mongodb://localhost:27017';
+const URL='mongodb://localhost:27017/crud_mern';
 
 try {
     await mongoose.connect(URL,{useUnifiedTopology:true,useNewUrlParser: true,
@@ -12,4 +12,4 @@ try {
     console.log("Error while connectiong while db", error)
 }
 }
-export default connection;
+export default Connection;
