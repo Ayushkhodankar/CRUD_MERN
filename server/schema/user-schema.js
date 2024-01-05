@@ -8,7 +8,8 @@ const userSchema=mongoose.Schema({
     phone:String
 })
 autoIncrement.initialize(mongoose.connection);
-userSchema.plugin(autoIncrement.plugin,'user');
+//error in auto increment code
+//userSchema.plugin(autoIncrement.plugin,'user');
 const user =mongoose.model('user',userSchema);
 
 export default user;
